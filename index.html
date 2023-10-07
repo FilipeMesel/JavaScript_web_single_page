@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        body {
+            background-color: #8B008B;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #FFF;
+        }
+
+        header {
+            background: rgba(139, 0, 139, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            display: flex; /* Adicione flexbox para alinhar o nome e o e-mail */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Empilhe elementos verticalmente */
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0; /* Remova a margem superior para o nome */
+        }
+
+        .contact-info {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .contact-info p {
+            margin: 0 10px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centralize os cards horizontalmente */
+            align-items: center; /* Centralize os cards verticalmente */
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.8); /* Fundo semitransparente branco para efeito de vidraçaria */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 45%;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            /* Adicione efeito de hover */
+            &:hover {
+                background: rgba(255, 255, 255, 0.9); /* Fundo semitransparente branco mais claro no hover */
+                color: black;
+            }
+        }
+
+        .card h2 {
+            font-size: 1.5em;
+        }
+
+    .paragrafo-mestrado-2 {
+        font-size: 18px;
+        margin-left: 15%;
+        margin-right: 20%;
+        margin-bottom: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .paragrafo-mestrado-2 h2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+    }
+
+    .paragrafo-mestrado {
+        font-size: 18px;
+        margin-left: 15%;
+        margin-right: 20%;
+        margin-bottom: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .paragrafo-mestrado h2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    a {
+        color: black;
+        background: white;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Filipe Mesel L. C. Cardoso</h1>
+    </header>
+    <main>
+        <div class="paragrafo-mestrado-2">
+            <h2 style="margin-right: 35%">Plataforma de Dispositivos IOT</h2>
+            <P>
+                O projeto correpsonde a uma plataforma IoT completa onde clientes, com níveis diferentes de acesso ao sistema, podem realizar
+                autenticação, criar empreendimentos com vários ambientes e configurar diversos devices diferentes para estes ambientes.
+                Atualmente existem 5 categorias diferentes de devices que permitem formas diferentes de visualizar dados.
+            </P>
+            <p>
+                Por exemplo, o DEMETER-WiFi permite visualizar a geolocalização do dispositivo num mapa interativo. Já que foi pensado a um device IOT
+                que monitora gado no pasto. Já o Hestia, controlador IoT de irrigação, permite acionar relés e sistemas de irrigação automáticos.
+                O projeto faz uso de:
+                <ul>
+                    <li>Python PAHO-MQTT (MQTT Client)</li>
+                    <li>Python Flask (Controle de Rotas e autenticação de usuários)</li>
+                    <li>Banco de dados MySQL</li>
+                    <li>React (Elaboração do front-end)</li>
+                    <li>React-bootstrap (Elaboração de Layouts)</li>
+                </ul>
+            </p>
+                O repositório pode ser acessado clicando <a target="_blank" href="https://github.com/FilipeMesel/plataforma_iot">aqui!</a>
+        </div>
+        <div class="paragrafo-mestrado">
+            <h2 style="margin-left: 75%;">NLW E-sports</h2>
+            <P>
+                O projeto foi desenvolvido ao longo da imersão NLW (Next Level Week) promovido pela instituição de ensino RocketSeat ao 
+                longo do dia 11/09/2022 ao dia 18/09/2022 que visou elaborar um projeto capaz de envolver conceitos de front-end e back-end
+                 com o typescript. Ao longo da trilha, atividades práticas foram realizadas envolvendo:
+                <ul>
+                    <li>Construção de um banco de dados relacional com o Prisma com duas tabelas (Ad e Games)</li>
+                    <li>Construção de um api restful com typescrip</li>
+                    <li>Construção de uma landing page com React</li>
+                    <li>Construção de um mobile app com React Native</li>
+                </ul>
+                O repositório pode ser acessado clicando <a target="_blank" href="https://github.com/FilipeMesel/JavaScript-Pojects/tree/main/nlwEsports">aqui!</a>
+            </P>
+        </div>
+        <div class="paragrafo-mestrado-2">
+            <h2 style="margin-right: 20%;">Dashboard IoT para medidores de temperatura</h2>
+            <P>
+                Projeto de uma plataforma web fullstack que comporta dados oriundos de sensores de temperatura
+                O projeto faz uso de:
+                <ul>
+                    <li>React</li>
+                    <li>nodemon</li>
+                    <li>Express</li>
+                    <li>MySQL (MariaDB)</li>
+                </ul>
+                O repositório pode ser acessado clicando <a target="_blank" href="https://github.com/FilipeMesel/JavaScript-Pojects/tree/main/temperature-dashboard">aqui!</a>
+            </P>
+        </div>
+        <div class="paragrafo-mestrado">
+            <h2  style="margin-left: 60%;">Loca Car Dashboard</h2>
+            <P>
+                Projeto de uma plataforma web fullstack para locadora de carros. O projeto consta com uma pasta contendo o front-end escrito
+                em React e o back-end foi elaborado com Java Script usando NodeJS.
+                O projeto faz uso de:
+                <ul>
+                    <li>React</li>
+                    <li>nodemon</li>
+                    <li>Express</li>
+                    <li>MySQL (MariaDB)</li>
+                </ul>
+                O repositório pode ser acessado clicando <a target="_blank" href="https://github.com/FilipeMesel/JavaScript-Pojects/tree/main/locacar-dashboard">aqui!</a>
+            </P>
+        </div>
+        <div class="paragrafo-mestrado-2">
+            <h2 style="margin-right: 20%;">Dashboard IoT para medidores de humidade</h2>
+            <P>
+                Projeto de uma plataforma web fullstack que comporta dados oriundos de sensores de humidade
+                O projeto faz uso de:
+                <ul>
+                    <li>React</li>
+                    <li>nodemon</li>
+                    <li>Express</li>
+                    <li>MySQL (MariaDB)</li>
+                </ul>
+                O repositório pode ser acessado clicando <a target="_blank" href="https://github.com/FilipeMesel/JavaScript-Pojects/tree/main/humidity-dashboard">aqui!</a>
+            </P>
+        </div>
+        <div class="paragrafo-mestrado">
+            <h2  style="margin-left: 20%;">Dashboard IoT para medidores de gás de cozinha</h2>
+            <P>
+                Projeto de uma plataforma web fullstack que comporta dados oriundos de sensores de gás de cozinha.
+                O projeto faz uso de:
+                <ul>
+                    <li>React</li>
+                    <li>nodemon</li>
+                    <li>Express</li>
+                    <li>MySQL (MariaDB)</li>
+                </ul>
+                O repositório pode ser acessado clicando <a target="_blank" href="https://github.com/FilipeMesel/JavaScript-Pojects/tree/main/gas-dashboard">aqui!</a>
+            </P>
+        </div>
+        <div class="paragrafo-mestrado-2">
+            <h2 style="margin-right: 20%;">Calculadora com React</h2>
+            <P>
+                Projeto de uma calculadora usando conceitos básicos de React, Java Script, HTML5  e CSS3.
+                O projeto faz uso de:
+                <ul>
+                    <li>React</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul>
+                O repositório pode ser acessado clicando <a target="_blank" href="https://github.com/FilipeMesel/JavaScript-Pojects/tree/main/calculadora-react">aqui!</a>
+            </P>
+        </div>
+        <!-- <div class="card fullstack">
+            <h2>Fullstack Projects</h2>
+        </div>
+        <div class="card embedded">
+            <h2>C++ Embedded Systems Projects</h2>
+        </div>
+        <div class="card mestrado">
+            <h2>Sobre Meu Mestrado</h2>
+        </div>
+        <div class="card python">
+            <h2>Python Projects</h2>
+        </div> -->
+    </main>
+</body>
+</html>
